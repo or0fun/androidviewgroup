@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/tip_contianer"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginRight="7.5dp"
+            android:visibility="visible" >
+
+            <ProgressBar
+                android:id="@+id/pb_header_refresh"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                style="@android:style/Widget.ProgressBar"
+                android:layout_centerInParent="true"
+                android:indeterminate="true"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_header"
+                android:layout_width="8dp"
+                android:layout_height="11dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/pull_down" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_header_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下拉即可刷新"
+                android:textColor="#AAA"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_header_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="更新于：07-28 15:32"
+                android:textColor="#AAA"
+                android:textSize="15sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
